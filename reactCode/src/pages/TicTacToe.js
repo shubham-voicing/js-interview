@@ -8,7 +8,6 @@ const TicTacToe = () => {
     const [isUserX, setIsUserX] = useState(true)
     const [winner, setWinner] = useState(null)
 
-    console.log("data", data)
 
     const handleClickGrid = (index) => {
         if (!!winner) return
