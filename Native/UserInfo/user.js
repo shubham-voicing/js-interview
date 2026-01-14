@@ -15,7 +15,7 @@ const handlePrintRecords = async () => {
     userData = await handleGetUserData()
     for (let i = 0; i < userData.length; i++) {
         let user = userData[i]
-        userResultHTML += `<div class="user-info-single" onclick={handleGetDetailInfo(${user.id})}>
+        userResultHTML += `<div class="user-info-single" onclick={"handleGetDetailInfo(${user.id})"}>
         <h5>
        Name: ${user?.firstName}
         </h5>

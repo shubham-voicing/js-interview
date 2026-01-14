@@ -9,6 +9,7 @@ import FileStructureUI from './pages/FileStructure';
 import ThorttleUI from './pages/Thorttle';
 import DebounceUI from './pages/Debounce';
 import HolyGrail from './pages/HolyGrail';
+import TicTacToe from './pages/TicTacToe';
 
 
 const App = () => {
@@ -20,7 +21,8 @@ const App = () => {
       {/* <FileStructureUI /> */}
       {/* <ThorttleUI /> */}
       {/* <DebounceUI /> */}
-      <HolyGrail />
+      <TicTacToe />
+      {/* <HolyGrail /> */}
     </Fragment>
   )
 }
