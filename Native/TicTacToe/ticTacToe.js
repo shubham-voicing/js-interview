@@ -1,8 +1,10 @@
 let data = Array(9).fill("")
 let isUserX = true
+const gameAreaId = document.getElementById("gameArea")
+
 const drawBoard = () => {
 
-    const gameAreaId = document.getElementById("gameArea")
+
     let gameGridHTML = ""
     for (let i = 0; i < data.length; i++) {
         gameGridHTML += `<button class="hello btn btn-grid" 
@@ -42,10 +44,12 @@ const handleClickGrid = (index) => {
     let winner = calculateWinner()
     if (!!winner) return
     const clone = [...data]
-    clone[index] = !!isUserX ? "X" : "O"
+    const Text = !!isUserX ? "X" : "O"
+    clone[index] = Text
     data = clone
     isUserX = !isUserX
-    drawBoard()
+    gameAreaId.children[index].innerHTML = Text
+
 }
 
 drawBoard()
